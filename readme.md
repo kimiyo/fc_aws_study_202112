@@ -2,7 +2,7 @@
 
 ## in Ubunto of AWS cloud
 
-'''bash
+```bash
     1  sudo apt-get update
     2  sudo apt-get install build-essential
     3  sudo apt-get install python3
@@ -38,4 +38,4 @@
    33  nohup python3 manage.py runserver 0.0.0.0:8000 &
    34  ps
    35  history
-'''
+```
