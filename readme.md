@@ -115,3 +115,12 @@ docker image rm --force
 docker-compose up -d --build
 docker-compose ps
 ```
+
+## aws cli install
+
+```
+sudo apt install awscli
+docker tag ___ ___
+aws ecr get-login --no-include-email --region ap-northeast-2
+
+```
