@@ -107,3 +107,11 @@ docker run -p 80:80 docker/nginx
 docker run -d -p 80:80 docker/nginx
 
 ```
+
+## docker compose
+
+```
+docker image rm --force
+docker-compose up -d --build
+docker-compose ps
+```
