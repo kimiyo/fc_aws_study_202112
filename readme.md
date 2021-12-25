@@ -78,7 +78,32 @@ CMD ["python","manage.py","runserver","0.0.0.0:8000"]
 ## docker build
 
 ```
+docker rm $(docker ps -a -q)
+docker rmi 78c0b04503fa
+
 docker build -t docker/django .
 docker image list
 docker run -p 8000:8000 docker/django
+docker run -d -p 8000:8000 docker/django
+docker stop 7453f282a047
+```
+
+## docker compose
+
+```
+sudo curl -L https://github.com/docker/compose/releases/download/1.25.0-rc2/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+cd ..
+mkdir nginx
+cd nginx
+vi nginx.conf
+```
+
+## nginx 
+
+```
+docker build -t docker/nginx .
+docker run -p 80:80 docker/nginx
+docker run -d -p 80:80 docker/nginx
+
 ```
