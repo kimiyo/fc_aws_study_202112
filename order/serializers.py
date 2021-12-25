@@ -11,3 +11,13 @@ class MenuSerializer(serializers.ModelSerializer):
         model = Menu
         fields = '__all__'
 
+class OrderSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Order
+        fields = '__all__'
+
+class OrderfoodSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Orderfood
+        fields = '__all__'
+

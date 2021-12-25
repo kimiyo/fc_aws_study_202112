@@ -43,7 +43,9 @@ INSTALLED_APPS = [
     'order',
     'boss',
     'delivery',
+    'user',
     'rest_framework', # djangorestframework
+    'rest_framework_swagger', # SWAGGER OPEN API 
 ]
 
 MIDDLEWARE = [

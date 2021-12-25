@@ -16,10 +16,18 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+
 urlpatterns = [
     path('order/', include('order.urls')),
     path('boss/', include('boss.urls')),
     path('delivery/', include('delivery.urls')),
     path('admin/', admin.site.urls),
     path('api-auth/',include('rest_framework.urls', namespace='rest_framework')), #for djangorestframework
+    path('user/', include('user.urls')),
+    #
+    # for API
+    path('api/order/', include('order.apiurls')),
+    path('api/user/', include('user.apiurls')),
+    # for SWAGGER API STANDARD
+    # url(r'^docs/', schema_view),
 ]
